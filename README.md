@@ -24,6 +24,7 @@ Watch a short video explaining this project:
 
 [![Watch the video](https://img.youtube.com/vi/WW8_69AsBcM/0.jpg)](https://youtu.be/WW8_69AsBcM)
 
+**Note**: In the video, I referred to pyRDDLGym as a "compiler." To clarify, pyRDDLGym is a simulation environment for RDDL, used in reinforcement learning applications, not a compiler.
 
 ## Installation
 To get started, clone the repository and install the dependencies listed in `requirements.txt`. This project uses Python version 3.10.6.
