@@ -22,7 +22,7 @@ This project automates the translation of natural language descriptions into RDD
 ## Project Demo Video
 Watch a short video explaining this project:
 
-[![Watch the video](https://img.youtube.com/vi/VUvqhoNJfvA/0.jpg)](https://youtu.be/VUvqhoNJfvA)
+[![Watch the video](https://img.youtube.com/vi/WW8_69AsBcM/0.jpg)](https://youtu.be/WW8_69AsBcM)
 
 
 ## Installation
