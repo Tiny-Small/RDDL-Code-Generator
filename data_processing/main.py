@@ -4,7 +4,7 @@ from rag.process_data import process_content, generate_metadata
 from rag.index import create_index, save_index
 
 # Load environment variables
-ENV_PATH = "../../.env"
+ENV_PATH = "../.env"
 load_env(ENV_PATH)
 
 # Define main directory

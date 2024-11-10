@@ -1,5 +1,3 @@
-# from llama_index.core import Settings  # Import if needed for Settings.llm
-
 async def query_with_feedback(initial_prompt, query_engine, error_message, Settings, iteration, memory):
     print(f"System: Iteration {iteration + 1}\n")
 

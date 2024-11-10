@@ -6,6 +6,7 @@ This project automates the translation of natural language descriptions into RDD
 ## Table of Contents
 - [Project Overview](#project-overview)
 - [Features](#features)
+- [Demo Video](#project-demo-video)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Data](#data)
@@ -17,6 +18,11 @@ This project automates the translation of natural language descriptions into RDD
 - Supports iterative error feedback to improve code quality until it’s compilable.
 - Integrates with pyRDDLGym to enable reinforcement learning simulations.
 - Utilizes Nvidia and OpenAI APIs for embedding and text generation.
+
+## Project Demo Video
+Watch a short video explaining this project:
+[![Watch the video](https://img.youtube.com/vi/VUvqhoNJfvA&ab_channel=Pacat/0.jpg)](https://youtu.be/VUvqhoNJfvA)
+
 
 ## Installation
 To get started, clone the repository and install the dependencies listed in `requirements.txt`. This project uses Python version 3.10.6.
@@ -32,7 +38,12 @@ pip install -r requirements.txt --extra-index-url https://download.pytorch.org/w
   - Configure the `.env` file with necessary API keys:
     - `NVIDIA_API_KEY` for Nvidia embedding and reranking.
     - `OPENAI_API_KEY` for text generation
-2. Running the Project: To start the application with the Streamlit interface:
+2. Creating the vector store:
+```bash
+cd data_processing
+python run main.py
+```
+3. Running the Project: To start the application with the Streamlit interface:
 ```bash
 cd querying
 streamlit run app.py
