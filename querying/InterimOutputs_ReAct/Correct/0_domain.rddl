@@ -1,0 +1,36 @@
+
+domain elevators_mdp {
+    requirements = {
+        constrained-state,
+        reward-deterministic
+    };
+
+    types {
+        elevator : object;
+        floor : object;
+    };
+
+    pvariables {
+        person-in-elevator(elevator) : { state-fluent, int, default = 0 };
+        elevator-at-floor(elevator, floor) : { state-fluent, bool, default = false };
+        move-current-dir(elevator) : { action-fluent, bool, default = false };
+        open-door(elevator) : { action-fluent, bool, default = false };
+        close-door(elevator) : { action-fluent, bool, default = false };
+    };
+    
+    cpfs {
+        person-in-elevator'(?e) = 
+            if (move-current-dir(?e) & (person-in-elevator(?e) > 0)) 
+            then person-in-elevator(?e) - 1 
+            else person-in-elevator(?e);
+        
+        elevator-at-floor'(?e, ?f) = 
+            elevator-at-floor(?e, ?f); // Update with logic for transitioning between floors.
+    };
+    
+    reward = sum_{?e: elevator} (person-in-elevator(?e));
+
+    state-action-constraints {
+        forall_{?e : elevator} [(open-door(?e) + close-door(?e) + move-current-dir(?e)) <= 1];
+    };
+}

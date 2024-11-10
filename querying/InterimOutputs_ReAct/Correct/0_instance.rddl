@@ -1,0 +1,25 @@
+
+non-fluents nf_elevators {
+    domain = elevators_mdp;
+    
+    objects {
+        elevator : {e1};
+        floor : {f0, f1, f2};
+    };
+}
+
+
+
+instance elevators_inst {
+    domain = elevators_mdp;
+    non-fluents = nf_elevators;
+
+    init-state {
+        elevator-at-floor(e1, f0) = true;
+        person-in-elevator(e1) = 0;
+    };
+
+    max-nondef-actions = 1;
+    horizon = 40;
+    discount = 1.0;
+}
