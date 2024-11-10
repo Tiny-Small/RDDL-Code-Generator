@@ -52,7 +52,7 @@ streamlit run app.py
 ```
 
 ## Data
-The data used in this project is sourced from the International Probabilistic Planning Competition 2011. It provides RDDL examples that serve as a reference for generating new RDDL environments based on user-provided natural language descriptions.
+The data used in this project is sourced from the International Probabilistic Planning Competition 2011. It provides RDDL examples that serve as a reference for generating RDDL environments based on user-provided natural language descriptions.
 
 ## Project Structure
 - `main.py`: The main script for running code generation and creating the vector store.
