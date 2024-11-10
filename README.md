@@ -29,7 +29,7 @@ Watch a short video explaining this project:
 To get started, clone the repository and install the dependencies listed in `requirements.txt`. This project uses Python version 3.10.6.
 
 ```bash
-git clone https://github.com/YourUsername/RDDL-Code-Generator.git
+git clone https://github.com/Tiny-Small/RDDL-Code-Generator.git
 cd RDDL-Code-Generator
 pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cpu
 ```
