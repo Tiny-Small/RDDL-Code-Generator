@@ -15,9 +15,9 @@ This project automates the translation of natural language descriptions into RDD
 
 ## Features
 - Automates the generation of RDDL code from natural language descriptions.
-- Supports iterative error feedback to improve code quality until it’s compilable.
+- Supports iterative error feedback to improve code quality until it can be run in the pyRDDLGym environment.
 - Integrates with pyRDDLGym to enable reinforcement learning simulations.
-- Utilizes Nvidia and OpenAI APIs for embedding and text generation.
+- Utilizes Nvidia and OpenAI APIs for embedding, reranking and text generation.
 
 ## Project Demo Video
 Watch a short video explaining this project:
